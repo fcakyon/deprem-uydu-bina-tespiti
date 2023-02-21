@@ -1,0 +1,26 @@
+name: deprem-uydu-bina-tespiti
+channels:
+  - conda-forge
+  - pytorch
+  - anaconda
+  - nvidia
+dependencies:
+  - python=3.8
+  - pip
+  - nvidia::cudatoolkit=11.6
+  - pytorch::pytorch-cuda=11.6
+  - pytorch::pytorch=1.13.1
+  - pytorch::torchvision=0.14.1
+  - pip:
+    - sahi
+    - yolov5==7.0.9
+    - scikit-image
+    - scikit-learn
+    - graphviz
+    - --find-links https://download.openmmlab.com/mmcv/dist/cu116/torch1.13.0/index.html
+    - mmcv-full==1.7.1
+    - mmdet==2.28.1
+    - neptune-client
+    - black==21.7b0
+    - flake8==3.9.2
+    - isort==5.9.2
