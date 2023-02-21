@@ -6,6 +6,9 @@ __pycache__/
 # C extensions
 *.so
 
+# experiment files
+experiments/
+runs/
 
 # pycharm files
 .idea/
